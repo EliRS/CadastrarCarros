@@ -1,0 +1,44 @@
+/**/
+.title{
+  text-shadow:0.2em 0.2em 0.7em black;
+}
+h1{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 32px;
+}
+
+
+.container{
+  margin-left:2.5%; 
+  width: 95%;
+  height: 560px;
+  background: #fff;
+  box-shadow: 8px 8px 6px 0 rgba(110, 57, 57, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  position:absolute;
+  top: 50%; /* posiciona na metade da tela */
+  margin-top: -265px; /* e retrocede metade da altura */
+
+}
+
+body{
+  background: #00aaff;
+}
+img{
+  width:150px;
+  margin-top:-60px;
+  border-radius: 50%;
+}
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+#myBar {
+  width: 0%;
+  height: 30px;
+  background-color: #00aaff;
+  text-align: right;
+  line-height: 30px;
+  color:black;
+}
