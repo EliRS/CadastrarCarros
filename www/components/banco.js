@@ -6,6 +6,11 @@ $(document).on('keyup','#ano',function(){
   }
 });
 
+$(document).on('keyup','#valor',function(){
+  if (this.value.length > 9) {
+    this.value = this.value.slice(0,9); 
+  }
+});
 
 
 $(document).on('keyup change click focus','#cor',function(){
