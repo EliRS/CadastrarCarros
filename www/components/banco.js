@@ -32,15 +32,15 @@ $(document).on('click','#cadastro',function(){
 
       var elem = document.getElementById("myBar");   
       var width = 1;
-      var id = setInterval(frame, 1);
+      var id = setInterval(frame, 10);
       function frame() {
         if (width >= 100) {
-          elem.innerHTML = '<i class="fas fa-car-crash"></i>';
+          //elem.innerHTML = '<i class="fas fa-car-crash"></i>';
           clearInterval(id);
         } else {
-          width++; 
+          width+=3; 
           elem.style.width = width + '%'; 
-          elem.innerHTML = '<i class="fas fa-car-side x5"></i>';
+          elem.innerHTML = width+'%';
         }
       }
 
@@ -64,7 +64,7 @@ $(document).on('click','#cadastro',function(){
           if(width == 100){
             navigator.notification.alert(data);
             elem.style.width = 0 + '%'; 
-            elem.innerHTML =  '<i class="fas fa-car-side x5"></i>';
+            elem.innerHTML =  '0%';
           }
         }
       });
